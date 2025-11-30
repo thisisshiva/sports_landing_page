@@ -164,13 +164,13 @@ export function ContactForm() {
                 />
               </div>
 
-              <button
-                type="submit"
+              <a
+                href="mailto:shivashankarnatarajan97@gmail.com"
                 className="w-full bg-[#a7fa25] text-[#545454] py-4 rounded-lg hover:bg-[#95e020] transition-colors flex items-center justify-center gap-2"
               >
                 Send Message
                 <Send className="w-5 h-5" />
-              </button>
+              </a>
             </form>
           </div>
         </div>
