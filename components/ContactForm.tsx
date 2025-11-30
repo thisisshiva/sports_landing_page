@@ -11,19 +11,53 @@ export function ContactForm() {
     category: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Handle form submission logic here
-    alert("Thank you for your query! We'll get back to you soon.");
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      category: "",
-      message: ""
-    });
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        alert("Thank you for your query! We'll get back to you soon.");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          category: "",
+          message: ""
+        });
+      } else {
+        // Fallback to mailto if API fails or not configured
+        const subject = encodeURIComponent(`New Contact Form Submission - ${formData.category}`);
+        const body = encodeURIComponent(
+          `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nCategory: ${formData.category}\n\nMessage:\n${formData.message}`
+        );
+        window.location.href = `mailto:itzshivshankar0l0@gmail.com?subject=${subject}&body=${body}`;
+        // Don't show alert here, let the mailto handle it
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      // Fallback to mailto if API fails
+      const subject = encodeURIComponent(`New Contact Form Submission - ${formData.category}`);
+      const body = encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nCategory: ${formData.category}\n\nMessage:\n${formData.message}`
+      );
+      window.location.href = `mailto:itzshivshankar0l0@gmail.com?subject=${subject}&body=${body}`;
+      // Don't show alert here, let the mailto handle it
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -164,13 +198,14 @@ export function ContactForm() {
                 />
               </div>
 
-              <a
-                href="mailto:shivashankarnatarajan97@gmail.com"
-                className="w-full bg-[#a7fa25] text-[#545454] py-4 rounded-lg hover:bg-[#95e020] transition-colors flex items-center justify-center gap-2"
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full bg-[#a7fa25] text-[#545454] py-4 rounded-lg hover:bg-[#95e020] transition-colors flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message
+                {isSubmitting ? "Sending..." : "Send Message"}
                 <Send className="w-5 h-5" />
-              </a>
+              </button>
             </form>
           </div>
         </div>
