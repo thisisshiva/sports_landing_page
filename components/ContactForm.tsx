@@ -98,7 +98,7 @@ export function ContactForm() {
                 </div>
                 <div>
                   <p className="text-gray-300 mb-1">Email Us</p>
-                  <p className="text-lg">info@jksportsmedia.in</p>
+                  <a href="mailto:neeraj@jksportsventures.com" className="text-lg hover:text-[#a7fa25] transition-colors">neeraj@jksportsventures.com</a>
                 </div>
               </div>
             </div>

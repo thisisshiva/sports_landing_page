@@ -8,7 +8,7 @@ export function TournamentsGrid() {
       image: "https://images.unsplash.com/photo-1709134800935-d00e89d5b8e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3V0aCUyMGNyaWNrZXQlMjBwbGF5ZXJzfGVufDF8fHx8MTc2NDM0Njk3OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     },
     {
-      title: "Late Smt. Manjeet Kaur U19 Trophy",
+      title: "2019: Late Smt. Manjeet Kaur U19 Trophy",
       image: "https://images.unsplash.com/photo-1580831800257-f83135932664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmlja2V0JTIwdHJvcGh5JTIwY2VsZWJyYXRpb258ZW58MXx8fHwxNzY0MzQ2OTgxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       viewership: "CRICHEROS VIEWERSHIP : 9389"
     },
@@ -63,7 +63,7 @@ export function TournamentsGrid() {
               
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                 <h3 className="text-lg mb-2">{tournament.title}</h3>
-                <button className="inline-flex items-center gap-2 text-[#a7fa25] group-hover:gap-3 transition-all">
+                <button className="text-sm inline-flex items-center gap-2 text-[#a7fa25] group-hover:gap-3 transition-all">
                   {tournament.viewership}
                   <ExternalLink className="w-4 h-4" />
                 </button>
