@@ -1,3 +1,5 @@
+"use client";
+
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Trophy, Users, Heart, Tv, TrendingUp } from "lucide-react";
 
@@ -9,6 +11,13 @@ export function FeaturedProject() {
     { icon: Tv, label: "Live Broadcasts" },
     { icon: TrendingUp, label: "National Expansion Roadmap" }
   ];
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   return (
     <div className="py-20 bg-gradient-to-br from-[#a7fa25]/10 to-gray-50">
@@ -26,9 +35,9 @@ export function FeaturedProject() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <ImageWithFallback 
-                src="https://images.unsplash.com/photo-1734519654307-ceb306e4073a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBjcmlja2V0JTIwdGVhbXxlbnwxfHx8fDE3NjQzNDY5Nzl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="LCL_JK.svg"
                 alt="Legends Corporate League"
-                className="w-full h-[500px] object-cover"
+                className="w-full h-[400px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             </div>
@@ -60,7 +69,10 @@ export function FeaturedProject() {
               <button className="bg-[#545454] text-white px-8 py-4 rounded-lg hover:bg-[#3a3a3a] transition-colors">
                 Know More About LCL
               </button>
-              <button className="bg-[#a7fa25] text-[#545454] px-8 py-4 rounded-lg hover:bg-[#95e020] transition-colors">
+              <button 
+                onClick={scrollToContact}
+                className="bg-[#a7fa25] text-[#545454] px-8 py-4 rounded-lg hover:bg-[#95e020] transition-colors"
+              >
                 Become a Sponsor
               </button>
             </div>

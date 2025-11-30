@@ -54,8 +54,9 @@ export function HeroSection() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-tr from-[#a7fa25]/20 to-transparent z-10"></div>
               <ImageWithFallback 
-                src="https://images.unsplash.com/photo-1671450960874-0903baf942c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBpbmRpYW4lMjBidXNpbmVzc21hbiUyMHBvcnRyYWl0fGVufDF8fHx8MTc2NDM0Njk3OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Neeraj Sachdeva - Founder"
+                // src="/static/images/founder_cover.jpg"
+                src="/founder_cover_2.svg"
+                alt="Neeraj Sachdeva "
                 className="w-full h-[500px] object-cover"
               />
             </div>
