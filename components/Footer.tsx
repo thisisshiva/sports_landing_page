@@ -119,28 +119,32 @@ export function Footer() {
               <p className="text-gray-400">Follow Us:</p>
               <div className="flex gap-3">
                 <a 
-                  href="#" 
+                  target="_blank"
+                  href="https://www.instagram.com/jksportsmediaventures?igsh=dmN1ZW84MTA5ZWsy" 
                   className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#a7fa25] hover:text-slate-900 transition-colors"
                   aria-label="Instagram"
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a 
-                  href="#" 
+                  target="_blank"
+                  href="https://youtube.com/@jksportsmanagement5391?si=WDOQTOxja2F_fFNL" 
                   className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#a7fa25] hover:text-slate-900 transition-colors"
                   aria-label="YouTube"
                 >
                   <Youtube className="w-5 h-5" />
                 </a>
                 <a 
-                  href="#" 
+                  target="_blank"
+                  href="https://www.facebook.com/share/17uFtpFAb4/" 
                   className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#a7fa25] hover:text-slate-900 transition-colors"
                   aria-label="Facebook"
                 >
                   <Facebook className="w-5 h-5" />
                 </a>
                 <a 
-                  href="#" 
+                  target="_blank"
+                  href="https://www.linkedin.com/in/neeraj-sachdeva-699958364/" 
                   className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#a7fa25] hover:text-slate-900 transition-colors"
                   aria-label="LinkedIn"
                 >
