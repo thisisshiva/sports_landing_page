@@ -3,25 +3,32 @@ import { Star, Quote } from "lucide-react";
 export function TestimonialsSection() {
   const testimonials = [
     {
-      name: "Rajesh Kumar",
-      role: "HR Manager, Tech Corp India",
-      company: "Corporate Partner",
+      name: "Rahul Yadav ",
+      role: "IPL player",
+      company: "Chief Guest",
       rating: 5,
-      text: "JK Sports organized our first corporate cricket league and it exceeded all expectations. The professionalism, ground management, and live broadcast capabilities made our team building event truly memorable. Highly recommended!"
+      text: "Their great organizing, clear on-ground management, and strong commitment to fair, high-quality events make them stand out. Every tournament they run is professional and full of passion, creating a place where players feel supported and motivated. "
     },
     {
-      name: "Priya Sharma",
-      role: "Parent",
-      company: "NYCL Participant",
+      name: "Shyam Sharma",
+      role: "DDCA director",
+      company: "Chief Guest",
       rating: 5,
-      text: "My son participated in the Noida Youth Cricket League and it was an incredible experience. The tournament was well-organized, the coaching staff was supportive, and the exposure he received was invaluable for his development."
+      text: "Shyam Sharma praises their commitment to nurturing young talent and building structured, transparent cricket pathways across India, noting the clarity, professionalism, and long-term vision driving grassroots growth and future excellence."
     },
     {
-      name: "Vikram Singh",
-      role: "Director",
-      company: "Cricket Academy Owner",
+      name: "Shailesh Sinha",
+      role: "CCL Player",
+      company: "Bhojpuri Actor",
       rating: 5,
-      text: "We've partnered with JK Sports for multiple tournaments. Their commitment to youth development and structured league formats has helped our academy students gain competitive experience. Neeraj and his team are true professionals."
+      text: "I’ve known JK Sports Co. for years. Neeraj Ji’s sincerity, hard work, and deep sports knowledge stand out. His strong network and client-first approach make his services truly dependable. Keep progressing!"
+    },
+    {
+      name: "Anil Chaudhary",
+      role: "Indian Cricket Umpire ",
+      company: "Chief Guest",
+      rating: 5,
+      text: "JK Sports has grown into a trusted pillar for aspiring players. Their disciplined approach, genuine guidance, and commitment to nurturing talent create an environment where athletes feel supported, inspired, and ready to rise."
     }
   ];
 

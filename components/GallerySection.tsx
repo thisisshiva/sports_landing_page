@@ -7,6 +7,7 @@ export function GallerySection() {
   const [activeCategory, setActiveCategory] = useState("All");
 
   const galleryImages = [
+    {url: "/static/images/all/Indian_cricket_Umpire.jpg", category: "Indian Cricket Umpire"},
     {
       url: "https://images.unsplash.com/photo-1625401586082-9a9b17bc4ce5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmlja2V0JTIwc3RhZGl1bSUyMHRvdXJuYW1lbnR8ZW58MXx8fHwxNzY0MzQ2OTc5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       category: "Match Highlights"
