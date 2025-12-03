@@ -9,7 +9,7 @@ export function AboutFounder() {
     },
     {
       icon: Users,
-      value: "2000+",
+      value: "10,000+",
       label: "Players Engaged"
     },
     {
@@ -62,7 +62,7 @@ export function AboutFounder() {
         {/* Additional Stats */}
         <div className="mt-12 text-center">
           <p className="text-lg text-gray-700">
-            <span className="text-[#a7fa25]">100+ cricket clubs</span> & <span className="text-[#a7fa25]">200+ cricket academies</span> engaged with us throughout India
+            <span className="text-black font-extrabold">100+ cricket clubs</span> & <span className="text-black font-extrabold">200+ cricket academies</span> engaged with us throughout India
           </p>
         </div>
       </div>

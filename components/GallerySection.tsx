@@ -3,7 +3,7 @@ import { useState } from "react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function GallerySection() {
-  const categories = ["All", "Match Highlights", "Trophy Celebrations", "Team Photos", "Ground Shots", "Corporate Events"];
+  const categories = ["All", "Match Highlights", "Trophy Celebrations", "Team Photos", "Ground Shots", "News Features"];
   const [activeCategory, setActiveCategory] = useState("All");
 
   const galleryImages = [
