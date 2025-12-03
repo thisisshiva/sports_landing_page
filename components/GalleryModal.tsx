@@ -9,9 +9,10 @@ interface GalleryModalProps {
   onClose: () => void;
   title: string;
   year: string;
+  description: string;
 }
 
-export function GalleryModal({ isOpen, onClose, title, year }: GalleryModalProps) {
+export function GalleryModal({ isOpen, onClose, title, year, description }: GalleryModalProps) {
   const [images, setImages] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -132,18 +133,18 @@ export function GalleryModal({ isOpen, onClose, title, year }: GalleryModalProps
           }}
         >
           {/* Header */}
-          <div className="px-6 pt-6 pb-4 border-b flex items-center justify-between" style={{ padding: '1.5rem', borderBottom: '1px solid #e5e7eb', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <div>
+          <div className="px-6 pt-6 pb-4 border-b flex items-center justify-between flex-shrink-0" style={{ padding: '1.5rem', borderBottom: '1px solid #e5e7eb', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexShrink: 0 }}>
+            <div className="flex-1 min-w-0">
               <h2 className="text-2xl font-semibold text-gray-900" style={{ fontSize: '1.5rem', fontWeight: 600, color: '#111827' }}>
                 {title}
               </h2>
               <p className="text-sm text-gray-500 mt-1" style={{ fontSize: '0.875rem', color: '#6b7280', marginTop: '0.25rem' }}>
-                Year: {year}
+                <b>Year:</b> { year || "N/A"}
               </p>
             </div>
             <button
               onClick={onClose}
-              className="ml-4 rounded-lg p-2 hover:bg-gray-100 transition-colors"
+              className="ml-4 rounded-lg p-2 hover:bg-gray-100 transition-colors flex-shrink-0"
               aria-label="Close modal"
               style={{
                 marginLeft: '1rem',
@@ -152,6 +153,7 @@ export function GalleryModal({ isOpen, onClose, title, year }: GalleryModalProps
                 border: 'none',
                 background: 'transparent',
                 cursor: 'pointer',
+                flexShrink: 0,
               }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#f3f4f6'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
@@ -172,6 +174,18 @@ export function GalleryModal({ isOpen, onClose, title, year }: GalleryModalProps
               boxSizing: 'border-box'
             }}
           >
+            {/* Description */}
+            {description && (
+              <div className="mb-6 pb-6 border-b" style={{ marginBottom: '1.5rem', paddingBottom: '1.5rem', borderBottom: '1px solid #e5e7eb' }}>
+                <p className="text-sm text-gray-700" style={{ fontSize: '0.875rem', color: '#374151' }}>
+                  <b>Description:</b>
+                </p>
+                <p className="text-sm text-gray-600 mt-2" style={{ fontSize: '0.875rem', color: '#4b5563', marginTop: '0.5rem', whiteSpace: 'pre-line' }}>
+                  {description}
+                </p>
+              </div>
+            )}
+            
             {loading ? (
               <div className="flex items-center justify-center py-20" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', paddingTop: '5rem', paddingBottom: '5rem' }}>
                 <div className="text-gray-500" style={{ color: '#6b7280' }}>Loading images...</div>

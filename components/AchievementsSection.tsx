@@ -9,7 +9,7 @@ export function AchievementsSection() {
     },
     {
       icon: Users,
-      value: "2000+",
+      value: "10,000+",
       label: "Registered Players"
     },
     {
