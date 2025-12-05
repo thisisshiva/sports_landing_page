@@ -20,7 +20,7 @@ export function FeaturedProject() {
   };
 
   return (
-    <div className="py-20 bg-gradient-to-br from-[#a7fa25]/10 to-gray-50">
+    <div id="lcl" className="py-20 bg-gradient-to-br from-[#a7fa25]/10 to-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-block bg-[#a7fa25] text-[#545454] px-6 py-2 rounded-full mb-4">

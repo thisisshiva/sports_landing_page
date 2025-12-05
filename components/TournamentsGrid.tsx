@@ -306,7 +306,7 @@ export function TournamentsGrid() {
 
       {selectedGallery && (
         <>
-          {console.log("Rendering GalleryModal with:", selectedGallery)}
+          {/* {console.log("Rendering GalleryModal with:", selectedGallery)} */}
           <GalleryModal
             isOpen={true}
             onClose={() => {

@@ -47,7 +47,7 @@ export function GallerySection() {
     : galleryImages.filter(img => img.category === activeCategory);
 
   return (
-    <div className="py-20 bg-gray-50">
+    <div id="gallery" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl mb-4">Moments That Define Us</h2>
