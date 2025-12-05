@@ -1,6 +1,49 @@
+"use client"
 import { MapPin, Phone, Mail, Instagram, Youtube, Facebook, Linkedin } from "lucide-react";
 
 export function Footer() {
+
+  const scrollToTournament= ()=>{
+    const tournamentSection = document.getElementById("tournaments")
+    if(tournamentSection){
+      tournamentSection.scrollIntoView({behavior:"smooth", block: "start"})
+    }
+  }
+
+  const scrollToAbout= ()=>{
+    const aboutSection = document.getElementById("about")
+    if(aboutSection){
+      aboutSection.scrollIntoView({behavior:"smooth", block: "start"})
+    }
+  }
+
+  const scrollToLCL= ()=>{
+    const lclSection = document.getElementById("lcl")
+    if(lclSection){
+      lclSection.scrollIntoView({behavior:"smooth", block: "start"})
+    }
+  }
+
+  const scrollToGallery= ()=>{
+    const gallerySection = document.getElementById("gallery")
+    if(gallerySection){
+      gallerySection.scrollIntoView({behavior:"smooth", block: "start"})
+    }
+  }
+
+  const scrollToServices= ()=>{
+    const servicesSection = document.getElementById("services")
+    if(servicesSection){
+      servicesSection.scrollIntoView({behavior:"smooth", block: "start"})
+    }
+  }
+
+  const scrollToContact= ()=>{
+    const contactSection = document.getElementById("contact")
+    if(contactSection){
+      contactSection.scrollIntoView({behavior:"smooth", block: "start"})
+    }
+  }
   return (
     <footer className="bg-slate-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -38,34 +81,34 @@ export function Footer() {
             <h4 className="text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#a7fa25] transition-colors">
+                <button onClick={scrollToAbout} className="text-gray-400 hover:text-[#a7fa25] transition-colors">
                   About Us
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#a7fa25] transition-colors">
+                <button onClick={scrollToServices} className="text-gray-400 hover:text-[#a7fa25] transition-colors">
                   Our Services
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#a7fa25] transition-colors">
+                <button onClick={scrollToTournament} className="text-gray-400 hover:text-[#a7fa25] transition-colors">
                   Tournaments
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#a7fa25] transition-colors">
+                <button onClick={scrollToLCL} className="text-gray-400 hover:text-[#a7fa25] transition-colors">
                   LCL
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#a7fa25] transition-colors">
+                <button onClick={scrollToGallery} className="text-gray-400 hover:text-[#a7fa25] transition-colors">
                   Gallery
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-[#a7fa25] transition-colors">
+                <button onClick={scrollToContact} className="text-gray-400 hover:text-[#a7fa25] transition-colors">
                   Contact
-                </a>
+                </button>
               </li>
             </ul>
           </div>
