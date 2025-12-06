@@ -82,7 +82,7 @@ export function TournamentsGrid() {
       title:
         "2022: CAPTAIN JASWANT SINGH RAWAT MEMROIAL OPEN CRICKET TOURNAMENT 2022",
       year: "2022",
-      image:"/static/images/2022/IMG_7075.jpg",
+      image:"/static/images/2022/IMG_7075.jpeg",
       viewership: "CRICHEROS VIEWERSHIP : 67460",
       description: `
       1ST ALL INDIA 50 OVERS CASH PRIZE OPEN CRICKET TOURNAMENT 2021
