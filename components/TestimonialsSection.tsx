@@ -29,6 +29,20 @@ export function TestimonialsSection() {
       company: "Chief Guest",
       rating: 5,
       text: "JK Sports has grown into a trusted pillar for aspiring players. Their disciplined approach, genuine guidance, and commitment to nurturing talent create an environment where athletes feel supported, inspired, and ready to rise."
+    },
+    {
+      name: "Rajat Verma",
+      role: "Indian Cricket Umpire ",
+      company: "Chief Guest",
+      rating: 5,
+      text: "JK Sports delivers highly professional and well-organized tournaments. Great management, smooth scheduling, and an amazing playing experience that truly motivates every participating team."
+    },
+    {
+      name: " Kavya Nair",
+      role: "Indian Cricket Umpire ",
+      company: "Chief Guest",
+      rating: 5,
+      text: "Impressive execution by JK Sports! From ground setup to live streaming, everything was top-quality. A perfect platform that inspires players and corporates to perform at their best."
     }
   ];
 
