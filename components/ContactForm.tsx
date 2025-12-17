@@ -43,7 +43,7 @@ export function ContactForm() {
         const body = encodeURIComponent(
           `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nCategory: ${formData.category}\n\nMessage:\n${formData.message}`
         );
-        window.location.href = `mailto:itzshivshankar0l0@gmail.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:neeraj@jksportsventures.com?subject=${subject}&body=${body}`;
         // Don't show alert here, let the mailto handle it
       }
     } catch (error) {
@@ -53,7 +53,7 @@ export function ContactForm() {
       const body = encodeURIComponent(
         `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nCategory: ${formData.category}\n\nMessage:\n${formData.message}`
       );
-      window.location.href = `mailto:itzshivshankar0l0@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:neeraj@jksportsventures.com?subject=${subject}&body=${body}`;
       // Don't show alert here, let the mailto handle it
     } finally {
       setIsSubmitting(false);
