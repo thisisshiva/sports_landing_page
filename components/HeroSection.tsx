@@ -61,9 +61,9 @@ export function HeroSection() {
               />
             </div>
             {/* Floating Badge */}
-            <div className="absolute -bottom-6 -left-6 bg-[#a7fa25] text-[#545454] px-6 py-4 rounded-xl shadow-xl">
-              <p className="text-sm">Founder & MD</p>
-              <p>Neeraj Sachdeva</p>
+            <div className="absolute -bottom-6 -left-6 bg-[#a7fa25] px-6 py-4 rounded-xl shadow-xl">
+              <p className="text-sm font-black text-black" style={{ fontWeight: 700, color: '#000000' }}>Founder & MD</p>
+              <p className="text-lg font-black text-black" style={{ fontWeight: 700, color: '#000000' }}>Neeraj Sachdeva</p>
             </div>
           </div>
         </div>
