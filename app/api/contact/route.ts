@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
     // Send email using Resend
     const { data, error } = await resend.emails.send({
       from: "onboarding@resend.dev", // You can change this after verifying your domain
-      to: "itzshivshankar0l0@gmail.com",
+      to: "neeraj@jksportsventures.com",
       replyTo: email,
       subject: `New Contact Form Submission - ${category}`,
       html: `
